@@ -8,13 +8,13 @@ import {useStateValue} from "./StateProvider";
 import {actionTypes} from "./reducer";
 //state is how write variables in react
 
-function Search({hideButtons = false}) {
-    const[{}, dispatch] = useStateValue();
+function Search({ hideButtons = false }) {
+    const [{}, dispatch] = useStateValue();
 
     const[input, setInput] = useState("");
     const history = useHistory();
 
-    const search = (e) =>{
+    const search = (e) => {
         e.preventDefault();
         console.log('you hit the search button >>', input)
 

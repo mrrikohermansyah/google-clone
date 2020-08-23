@@ -3,7 +3,8 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import AppsIcon from "@material-ui/icons/Apps";
 import {Avatar} from "@material-ui/core";
-import Search from './Search';
+import Search from './pages/Search';
+
 
 function Home() {
     return (
@@ -23,11 +24,11 @@ function Home() {
             </div>
 
             <div className='home__body'>
-                <img src="https://pngimg.com/uploads/google/google_PNG19631.png">
+                <img src="https://pngimg.com/uploads/google/google_PNG19631.png" alt="">
                 </img>
 
                 <div className='home__inputContainer'>
-                <Search hideButtons />
+                <Search />
                 
                 </div>
             </div>
